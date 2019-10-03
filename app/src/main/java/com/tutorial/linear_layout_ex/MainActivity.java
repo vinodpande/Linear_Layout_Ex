@@ -22,6 +22,18 @@ Android LinearLayout Declaration
     android:orientation="vertical" >
     <!-- Add Child Views Here -->
 </LinearLayout>
+
+Layout Weight Attribute
+If you observe above example we used layout weight attribute (android:layout_weight) in child view.
+Actually, this attribute is used by child views to specify how much space the View should occupy on the screen.
+If we assign larger weight value to child view, then it will expand to fill any remaining space in the parent view.
+
+If you observe above example, we used three text fields and we assigned weight value to only one text field.
+The two text fields without weight will occupy only the area required for its content and the other text field with weight value will expand
+to fill the remaining space after all three fields measured.
+
+This is how we can use LinearLayout in android applications
+to render all View instances one by one either in Horizontal direction or Vertical direction based on the orientation property.
 */
 public class MainActivity extends AppCompatActivity {
 
